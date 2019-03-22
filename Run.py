@@ -14,7 +14,7 @@ while True:
 		
 		for line in temp:
 			print(line)
-			if ("PING" == line(:5)):
+			if ("PING" == line[0:4]):
 				s.send(line.replace("PING", "PONG"))
 				break
 			user = getUser(line)
